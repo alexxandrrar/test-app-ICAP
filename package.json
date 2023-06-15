@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.13.0"
   }
 }
