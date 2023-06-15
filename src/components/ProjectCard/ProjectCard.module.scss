@@ -4,18 +4,20 @@
   position: relative;
   transition: box-shadow 0.3s, transform 0.3s;
   height: 500px;
+  margin-top: 30px;
 
   .container {
     background-color: $textColorLight;
+    box-shadow: 11px 9px 17px -1px rgba(0, 0, 0, 0.12);
     text-align: center;
     width: 300px;
     height: 400px;
     padding: 20px 0;
     border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 
     img {
+      padding: 0 20px;
       width: 250px;
       height: 200px;
       border-radius: 10px;
@@ -29,34 +31,33 @@
 
     .text {
       font-size: 14px;
-      padding: 0 25px;
+      padding: 0 20px;
       color: $textColorDark;
     }
   }
   .readmore {
+    font-size: 18px;
     position: absolute;
-    bottom: -20px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
+    color: $textColorLight;
     background-color: $mainBlue;
-    color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     opacity: 0;
 
     &:hover {
+      font-size: 22px;
       background-color: darken($mainBlue, 10%);
     }
   }
 
   &:hover {
     .container {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-      border: 2px solid $mainBlue;
-      transform: scale(1.05);
+      transform: scale(0.95);
       transition: all 0.2s ease-in-out;
     }
 
