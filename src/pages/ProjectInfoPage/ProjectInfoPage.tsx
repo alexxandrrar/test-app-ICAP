@@ -10,8 +10,9 @@ export const ProjectInfoPage = () => {
         .filter((item) => item.id === id)
         .map((item) => (
           <div>
-            <h1>{item.name}</h1>
-            <p>{item.text}</p>
+            <h1 className={styles.name}>{item.name}</h1>
+            <hr className={styles.line} />
+            <p className={styles.text}>{item.editionalText}</p>
           </div>
         ))}
     </div>
